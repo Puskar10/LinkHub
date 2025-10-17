@@ -1,3 +1,33 @@
+🔗 LinkHub
+
+LinkHub is a modern and customizable platform for managing and sharing all your important links in one place — like a personal bio link, portfolio, or business hub. Designed for simplicity, speed, and style.
+
+🚀 Features
+
+🌐 All Links in One Place – Collect and share all your important links with a single URL.
+
+🎨 Customizable Profile – Add your profile photo, bio, and choose unique themes or colors.
+
+📱 Responsive Design – Looks great on any device — desktop, tablet, or mobile.
+
+💾 MongoDB Integration – Securely stores user profiles and links.
+
+🔒 Authentication – User login and registration powered by NextAuth.js.
+
+⚡ Fast & Modern Stack – Built with Next.js, Tailwind CSS, and Framer Motion for smooth UI animations.
+
+🧠 Dynamic Editing – Easily add, edit, and reorder links in real time.
+
+🛠️ Tech Stack
+
+Frontend: Next.js, React, Tailwind CSS, Framer Motion
+
+Backend: Next.js API Routes, MongoDB, Mongoose
+
+Auth: NextAuth.js (Credentials, OAuth ready)
+
+Deployment: Vercel
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
