@@ -4,6 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useSearchParams } from 'next/navigation';
+import { Suspense } from "react";
+import GenerateContent from "./GenerateContent";
 
 const GeneratePage = () => {
   const searchParams = useSearchParams();
@@ -248,7 +250,12 @@ const GeneratePage = () => {
   const getCurrentTheme = () => themes.find(theme => theme.id === formData.theme) || themes[0];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 py-8 px-4">
+    <>
+      <Suspense fallback={<div>Loading...</div>}>
+        <GenerateContent />
+      </Suspense>
+
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 py-8 px-4">
       <ToastContainer 
         position="top-right"
         theme="dark"
@@ -916,6 +923,7 @@ const GeneratePage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
